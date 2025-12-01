@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fullscreen background image */
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('baller003.jpg') no-repeat center center;
+            background-size: cover; /* covers entire screen */
+            z-index: -1;
+        }
+
+        /* container overlay */
+        .container {
+            max-width: 900px;
+            margin: 100px auto;
+            padding: 30px 40px;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 15px;
+            backdrop-filter: blur(3px);
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            -webkit-text-stroke: 2px black;
+            margin-bottom: 25px;
+        }
+
+        .profile-pic {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.9);
+            margin-bottom: 25px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.7);
+        }
+
+        .social-section p {
+            font-size: 22px;
+            margin: 10px 0;
+            -webkit-text-stroke: 0.7px black;
+        }
+
+        .label {
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 2px solid rgba(255,255,255,0.9);
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+            .profile-pic {
+                width: 200px;
+                height: 200px;
+            }
+            .social-section p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fullscreen background -->
+    <div class="bg-image"></div>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <img src="baller006.jpg" alt="Profile Picture" class="profile-pic">
+
+        <div class="social-section">
+            <p><span class="label">Facebook:</span> Prince Cambolod</p>
+            <p><span class="label">Instagram:</span> prince_cambolod</p>
+            <p><span class="label">TikTok:</span> @pri_nzzz</p>
+        </div>
+
+        <a href="index.html" class="back-button">⬅ Back to Home</a>
+    </div>
+
+</body>
+</html>
